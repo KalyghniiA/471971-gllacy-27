@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Саша Калюжный](https://up.htmlacademy.ru/htmlcss/27/user/471971).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
 
 ---
 
