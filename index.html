@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body style="background-color: red;">
     <header>
       <nav>
         <a><img src="img/logo.svg" alt="logo"></a>
@@ -25,27 +25,28 @@
         </ul>
         <ul>
           <li>
-            <img src="img/loupe.svg" alt="">
-            <form action="">
-              <input type="search" name="search" placeholder="Крем-брюле">
+            <img src="img/loupe.svg" alt="Поиск">
+            <form method="POST" action="https://echo.htmlacademy.ru">
+              <label for="search">Поиск</label>
+              <input type="search" name="search" placeholder="Крем-брюле" id="search">
             </form>
           </li>
           <li>
-            <img src="img/entrance.svg" alt="login">
-            <button>Вход</button>
+            <a href="#"><img src="img/entrance.svg" alt>Вход</a>
             <section>
-              <form action="">
-                <input type="email" name="login-email" placeholder="email@example.com" required>
-                <input type="password" name="login-password" required>
-                <button>Войти</button>
+              <form method="POST" action="https://echo.htmlacademy.ru">
+                <label for="user-login">Логин</label>
+                <input type="email" name="login-email" placeholder="email@example.com" id="user-login" required>
+                <label for="user-password">Пароль</label>
+                <input type="password" name="login-password" id="user-password" placeholder="*********" required>
+                <button type="submit">Войти</button>
               </form>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </section>
           </li>
           <li>
-            <img src="img/basket.svg" alt="basket">
-            <a href="#">Пусто</a>
+            <a href="#"><img src="img/basket.svg" alt>Пусто</a>
           </li>
         </ul>
       </nav>
@@ -60,12 +61,12 @@
         <div>
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button>Хочу варенье!</button>
+          <a href="#">Хочу варенье!</a>
         </div>
         <div>
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button>Хочу шоколадки!</button>
+          <a href="#">Хочу шоколадки!</a>
         </div>
       </section>
       <ul>
@@ -106,9 +107,12 @@
         </div>
         <div>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <form action="">
-            <input type="email" name="email" value="email@example.com">
-            <button>Отправить</button>
+          <form method="POST" action="https://echo.htmlacademy.ru">
+            <label >
+              Введите почту для получения рассылки
+              <input type="email" name="email" placeholder="email@example.com" >
+            </label>
+            <button type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -127,16 +131,16 @@
     <footer>
       <ul>
         <li>
-          <a href="#"><img src="img/twitter.svg" alt="twitter">twitter</a>
+          <a href="#" aria-label="twitter"><img src="img/twitter.svg" alt="twitter"></a>
         </li>
         <li>
-          <a href="#"><img src="img/instagram.svg" alt="instagram">instagram</a>
+          <a href="#" aria-label="instagram"><img src="img/instagram.svg" alt="instagram"></a>
         </li>
         <li>
-          <a href="#"><img src="img/fb.svg" alt="facebook">facebook</a>
+          <a href="#" aria-label="facebook"><img src="img/fb.svg" alt="facebook"></a>
         </li>
         <li>
-          <a href="#"><img src="img/vk.svg" alt="Vk">ВКонтакте</a>
+          <a href="#" aria-label="ВКонтакте"><img src="img/vk.svg" alt="Vk"></a>
         </li>
       </ul>
       <ul>
@@ -154,16 +158,21 @@
         </li>
       </ul>
       <div>
-        <a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
+        <a href="https://htmlacademy.ru/" aria-label="HTML-академия"><img src="img/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
       </div>
     </footer>
     <div>
       <p>Мы обязательно вам ответим!</p>
-      <form action="">
-        <input type="text" name="user-name" placeholder="Имя Фамилия" required>
-        <input type="email" name="user-email" placeholder="email@example.com" required>
-        <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      <button type="button"><img src="img/cross-big.svg" alt="Кнопка закрыть"></button>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <label for="user-name">Ваше имя и фамилия</label>
+        <input type="text" name="user-name" placeholder="Имя Фамилия" id="user-name" required>
+        <label for="user-email">Ваша почта</label>
+        <input type="email" name="user-email" placeholder="email@example.com" id="user-email" required>
+        <label for="user-text">Ваше сообщение</label>
+        <textarea name="text" cols="30" rows="10" placeholder="В свободной форме" id="user-text"></textarea>
+        <button type="submit">Отправить</button>
       </form>
     </div>
   </body>
