@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -13,7 +15,7 @@
           <li class="navigation__item">
             <a href="#" class="navigation__link">Каталог</a>
             <ul class="navigation__sublist sublist">
-              <li class="sublist__item"><a class="sublist__link" href="#">Новинки</a></li>
+              <li class="sublist__item"><a class="sublist__link sublist__link--new" href="#">Новинки</a></li>
               <li class="sublist__item"><a class="sublist__link" href="catalog.html">Сливочное</a></li>
               <li class="sublist__item"><a class="sublist__link" href="#">Щербеты</a></li>
               <li class="sublist__item"><a class="sublist__link" href="#">Фруктовый лед</a></li>
@@ -28,15 +30,15 @@
         <ul class="form__list">
           <li class="form__search search">
             <img src="img/loupe.svg" alt="Поиск" class="search__image">
-            <form method="POST" action="https://echo.htmlacademy.ru" class="search__form">
+            <form method="POST" action="https://echo.htmlacademy.ru" class="search__form visually-hidden">
               <label for="search" class="search__label">Поиск</label>
               <input type="search" name="search" placeholder="Крем-брюле" id="search" class="search__input">
             </form>
           </li>
           <li class="form__personal-area personal-area">
             <a href="#" class="personal-area__login-button"><img src="img/entrance.svg" class="personal-area__image" alt>Вход</a>
-            <section class="personal-area__section">
-              <form class="personal-area personal-area__form" method="POST" action="https://echo.htmlacademy.ru">
+            <section class="personal-area__section visually-hidden">
+              <form class="personal-area__form" method="POST" action="https://echo.htmlacademy.ru">
                 <label for="user-login" class="personal-area__label">Логин</label>
                 <input class="personal-area__input" type="email" name="login-email" placeholder="email@example.com" id="user-login" required>
                 <label for="user-password" class="personal-area__label">Пароль</label>
@@ -48,7 +50,7 @@
             </section>
           </li>
           <li class="form__basket basket">
-            <a href="#" class="basket__link"><img class="basket__image" src="img/basket.svg" alt>Пусто</a>
+            <a href="#" class="basket__link"><img class="basket__icon" src="img/basket.svg" alt>Пусто</a>
           </li>
         </ul>
       </section>
@@ -58,14 +60,15 @@
       </div>
     </header>
     <main class="main">
+      <h1 class="main__title visually-hidden">Магазин мороженного Gllacy</h1>
      <!--  <section> </section>  слайдер -->
       <section class="main__action action">
-        <div class="action__block">
+        <div class="action__block action__block--raspberries">
           <h2 class="action__title">Малинка даром!</h2>
           <p class="action__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a  class="action__button button" href="#">Хочу варенье!</a>
         </div>
-        <div class="action__block">
+        <div class="action__block action__block--chocolate">
           <h2 class="action__title">Шоколадки даром!</h2>
           <p class="action__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="action__button button" href="#">Хочу шоколадки!</a>
@@ -74,27 +77,27 @@
       <ul class="main__product product">
         <li class="product__block">
           <img class="product__image" src="img/orange.jpg" alt="item" width="267" height="267">
-          <span class="product__price">310₽/<sub>кг</sub></span>
+          <span class="product__price">310₽/<span class="product__heft">кг</span></span>
           <p class="product__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a href="#" class="product__button button">Быстрый просмотр</a>
+          <a href="#" class="product__button button visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product__block">
           <img class="product__image" src="img/coffee.jpg" alt="item" width="267" height="267">
-          <span>380₽/<sub>кг</sub></span>
+          <span class="product__price">380₽/<span class="product__heft">кг</span></span>
           <p class="product__description">Сливочно-кофейное с кусочками шоколада</p>
-          <a href="#" class="product__button button">Быстрый просмотр</a>
+          <a href="#" class="product__button button visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product__block">
           <img class="product__image" src="img/strawberry.jpg" alt="item" width="267" height="267">
-          <span>355₽/<sub>кг</sub></span>
+          <span class="product__price">355₽/<span class="product__heft">кг</span></span>
           <p class="product__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a href="#" class="product__button button">Быстрый просмотр</a>
+          <a href="#" class="product__button button visually-hidden">Быстрый просмотр</a>
         </li>
         <li class="product__block">
           <img class="product__image" src="img/cream.jpg" alt="item" width="267" height="267">
-          <span>415₽/<sub>кг</sub></span>
+          <span class="product__price">415₽/<span class="product__heft">кг</span></span>
           <p class="product__description">Сливочное крем-брюле с карамельной подливкой</p>
-          <a href="#" class="product__button button">Быстрый просмотр</a>
+          <a href="#" class="product__button button visually-hidden">Быстрый просмотр</a>
         </li>
       </ul>
       <section class="main__description description">
@@ -111,13 +114,11 @@
           <span class="blog__title">Новое в нашем блоге</span>
           <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </div>
-        <div class="news__mailing mailing">
+        <div class="news__blog mailing">
           <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
           <form method="POST" action="https://echo.htmlacademy.ru" class="mailing__form">
-            <label class="mailing__label">
-              Введите почту для получения рассылки
-              <input type="email" name="email" placeholder="email@example.com" class="mailing__input">
-            </label>
+            <label class="mailing__label visually-hidden" for="mailing__input">Введите почту для получения рассылки</label>
+            <input type="email" name="email" placeholder="email@example.com" class="mailing__input" id="mailing__input">
             <button type="submit" class="mailing__button button">Отправить</button>
           </form>
         </div>
@@ -150,7 +151,7 @@
       </ul>
       <ul class="footer__info info">
         <li class="info__item info__item--main">
-          <a href="#" class="info__link">Для поставщиков</a>
+          <a href="#" class="info__link info__link--main">Для поставщиков</a>
         </li>
         <li class="info__item">
           <a href="#" class="info__link">О производстве</a>
@@ -163,11 +164,11 @@
         </li>
       </ul>
       <div class="footer__developers developers">
-        <a class="developers__logo" href="https://htmlacademy.ru/" aria-label="HTML-академия"><img class="developers__image" src="img/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
+        <a class="developers__logo" href="https://htmlacademy.ru/" aria-label="HTML-академия"><img class="developers__image" src="img/logo-htmlacademy.svg" alt="htmlacademy-logo" width="108" height="39"></a>
         <p class="developers__info">Сделано в <a class="developers__link" href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-    <div class="popap">
+    <div class="popap visually-hidden">
       <p class="popap__title">Мы обязательно вам ответим!</p>
       <button class="popap__button-close" type="button"><img src="img/cross-big.svg" alt="Кнопка закрыть"></button>
       <form method="POST" action="https://echo.htmlacademy.ru" class="popap__form">
