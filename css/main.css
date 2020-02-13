@@ -32,7 +32,8 @@ a {
   border-radius: 10px;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
 }
 
@@ -48,7 +49,8 @@ a {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
-.navigation__link:hover, .navigation__link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: #323232;
   background-color: #f7f6f3;
   line-height: 18px;
@@ -67,8 +69,8 @@ a {
   border-radius: 10px;
 }
 
-
-.sublist__item:hover, .sublist__item:focus {
+.sublist__item:hover,
+.sublist__item:focus {
   background-color: #fbded7;
 }
 
