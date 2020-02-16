@@ -10,69 +10,71 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav class="navigation">
-          <a href="index.html" class="navigation__logo"><img src="img/logo.svg" alt="logo" class="navigation__image-logo"></a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link--active">Каталог</a>
-              <ul class="navigation__sublist sublist visually-hidden">
-                <li class="sublist__item"><a class="sublist__link" href="#">Новинки</a></li>
-                <li class="sublist__item"><a class="sublist__link" href="#">Сливочное</a></li>
-                <li class="sublist__item"><a class="sublist__link" href="#">Щербеты</a></li>
-                <li class="sublist__item"><a class="sublist__link" href="#">Фруктовый лед</a></li>
-                <li class="sublist__item"><a class="sublist__link" href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <section class="form">
-          <ul class="form__list">
-            <li class="form__search search">
-              <img src="img/loupe.svg" alt="Поиск" class="search__image">
-              <form method="POST" action="https://echo.htmlacademy.ru" class="search__form visually-hidden">
-                <label for="search" class="search__label">Поиск</label>
-                <input type="search" name="search" value="Крем-брюле" id="search" class="search__input">
-              </form>
-            </li>
-            <li class="form__personal-area personal-area">
-              <a href="#" class="personal-area__login-button">Вход</a>
-              <section class="personal-area__section visually-hidden">
-                <form method="POST" action="https://echo.htmlacademy.ru" class="personal-area__form">
-                  <label for="user-login" class="personal-area__label">Логин</label>
-                  <input class="personal-area__input" type="email" name="login-email" placeholder="email@example.com" id="user-login" required>
-                  <label for="user-password" class="personal-area__label">Пароль</label>
-                  <input class="personal-area__input" type="password" name="login-password" id="user-password" placeholder="*********" required>
-                  <button type="submit" class="personal-area__button button">Войти</button>
+        <div class="header__container">
+          <nav class="navigation">
+            <a href="index.html" class="navigation__logo"><img src="img/logo.svg" alt="logo" class="navigation__image-logo"></a>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--active">Каталог</a>
+                <ul class="navigation__sublist sublist visually-hidden">
+                  <li class="sublist__item"><a class="sublist__link" href="#">Новинки</a></li>
+                  <li class="sublist__item"><a class="sublist__link" href="#">Сливочное</a></li>
+                  <li class="sublist__item"><a class="sublist__link" href="#">Щербеты</a></li>
+                  <li class="sublist__item"><a class="sublist__link" href="#">Фруктовый лед</a></li>
+                  <li class="sublist__item"><a class="sublist__link" href="#">Мелорин</a></li>
+                </ul>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">О Компании</a></li>
+            </ul>
+          </nav>
+          <section class="form">
+            <ul class="form__list">
+              <li class="form__item search">
+                <img src="img/loupe.svg" alt="Поиск" class="search__image">
+                <form method="POST" action="https://echo.htmlacademy.ru" class="search__form visually-hidden">
+                  <label for="search" class="search__label">Поиск</label>
+                  <input type="search" name="search" value="Крем-брюле" id="search" class="search__input">
                 </form>
-                <a href="#" class="personal-area__link">Забыли пароль?</a>
-                <a href="#" class="personal-area__link">Новая регистрация</a>
-              </section>
-            </li>
-            <li class="form__basket basket basket--active">
-              <a href="#" class="basket__link">2 товара</a>
-              <section class="basket__block visually-hidden">
-                <div class="basket__item">
-                  <button type="button" class="basket__button-close"><img src="img/cross-small.svg" alt="удалить позицию" class="basket__icon-close"></button>
-                  <img src="img/orange.jpg" alt="item" class="basket__image">
-                  <p class="basket__text">Пломбир с апельсиновым джемом</p>
-                  <p class="basket__quantity">1,5 кг х <span>200 руб.</span></p>
-                  <p class="basket__price">300 руб.</p>
-                </div>
-                <div>
-                  <button type="button" class="basket__button-close"><img src="img/cross-small.svg" alt="удалить позицию" class="basket__icon-close"></button>
-                  <img src="img/strawberry.jpg" alt="item" class="basket__image">
-                  <p class="basket__text">Клубничный пломбир с присыпкой из белого шоколада</p>
-                  <p class="basket__quantity">1,5 кг х <span>300 руб.</span></p>
-                  <p class="basket__price">450 руб.</p>
-                </div>
-                <p class="basket__total">Итого:750 руб.</p>
-                <button type="button" class="basket__button button">Оформить заказ</button>
-              </section>
-            </li>
-          </ul>
-        </section>
+              </li>
+              <li class="form__item personal-area">
+                <a href="#" class="personal-area__login-button">Вход</a>
+                <section class="personal-area__section visually-hidden">
+                  <form method="POST" action="https://echo.htmlacademy.ru" class="personal-area__form">
+                    <label for="user-login" class="personal-area__label">Логин</label>
+                    <input class="personal-area__input" type="email" name="login-email" placeholder="email@example.com" id="user-login" required>
+                    <label for="user-password" class="personal-area__label">Пароль</label>
+                    <input class="personal-area__input" type="password" name="login-password" id="user-password" placeholder="*********" required>
+                    <button type="submit" class="personal-area__button button">Войти</button>
+                  </form>
+                  <a href="#" class="personal-area__link">Забыли пароль?</a>
+                  <a href="#" class="personal-area__link">Новая регистрация</a>
+                </section>
+              </li>
+              <li class="form__item basket basket--active">
+                <a href="#" class="basket__link">2 товара</a>
+                <section class="basket__block visually-hidden">
+                  <div class="basket__item">
+                    <button type="button" class="basket__button-close"><img src="img/cross-small.svg" alt="удалить позицию" class="basket__icon-close"></button>
+                    <img src="img/orange.jpg" alt="item" class="basket__image">
+                    <p class="basket__text">Пломбир с апельсиновым джемом</p>
+                    <p class="basket__quantity">1,5 кг х <span>200 руб.</span></p>
+                    <p class="basket__price">300 руб.</p>
+                  </div>
+                  <div>
+                    <button type="button" class="basket__button-close"><img src="img/cross-small.svg" alt="удалить позицию" class="basket__icon-close"></button>
+                    <img src="img/strawberry.jpg" alt="item" class="basket__image">
+                    <p class="basket__text">Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <p class="basket__quantity">1,5 кг х <span>300 руб.</span></p>
+                    <p class="basket__price">450 руб.</p>
+                  </div>
+                  <p class="basket__total">Итого:750 руб.</p>
+                  <button type="button" class="basket__button button">Оформить заказ</button>
+                </section>
+              </li>
+            </ul>
+          </section>
+        </div>
       </header>
       <main class="main">
         <div class="main__contacts-and-breaks">

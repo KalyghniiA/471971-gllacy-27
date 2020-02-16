@@ -101,7 +101,7 @@ a {
 .navigation__link--active {
   background-color: #d07058;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .sublist {
@@ -138,7 +138,7 @@ a {
   justify-content: space-between;
   margin-top: 22px;
   padding-left: 0;
-  width: 247px;
+  width: 262px;
 }
 
 .form__item {
@@ -503,6 +503,10 @@ a {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(225, 225, 225, 0.2);
+}
+
+.main__contacts-and-breaks {
+  display: flex;
 }
 
 .breaks__link {
