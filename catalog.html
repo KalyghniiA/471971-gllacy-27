@@ -110,22 +110,70 @@
             </fieldset>
             <fieldset class="sorting__filter">
               <legend class="sorting__legend">Цена: 100 руб. – 500 руб.</legend>
-              <!-- жду демки -->
+              <div class="sorting__range-filter range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min"></div>
+                  <div class="range-filter__toggle range-filter__toggle--max"></div>
+                </div>
+                <div class="price-controls visually-hidden">
+                  <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="sorting__filter">
+            <fieldset class="sorting__filter sorting__filter--radio">
               <legend class="sorting__legend">Жирность:</legend>
-              <label class="sorting__label"><input type="radio" name="fat" class="sorting__radio-button">0%</label>
-              <label class="sorting__label"><input type="radio" name="fat" class="sorting__radio-button sorting__radio-button--checked" checked>до 10%</label>
-              <label class="sorting__label"><input type="radio" name="fat" class="sorting__radio-button">до 30%</label>
-              <label class="sorting__label"><input type="radio" name="fat" class="sorting__radio-button">от 30%</label>
+              <label class="sorting__label-radio">
+                <input type="radio" name="fat" class="sorting__radio visually-hidden">
+                <span class="sorting__radio-button"></span>
+                0%
+              </label>
+              <label class="sorting__label-radio">
+                <input type="radio" name="fat" class="sorting__radio visually-hidden" checked>
+                <span class="sorting__radio-button"></span>
+                до 10%
+              </label>
+              <label class="sorting__label-radio">
+                <input type="radio" name="fat" class="sorting__radio visually-hidden">
+                <span class="sorting__radio-button"></span>
+                до 30%
+              </label>
+              <label class="sorting__label-radio">
+                <input type="radio" name="fat" class="sorting__radio visually-hidden">
+                <span class="sorting__radio-button"></span>
+                выше 30%
+              </label>
             </fieldset>
             <fieldset class="sorting__filter">
               <legend class="sorting__legend">Наполнители:</legend>
-              <label class="sorting__label"><input type="checkbox" name="extender" class="sorting__checkbox sorting__checkbox--checked" checked>шоколадные</label>
-              <label class="sorting__label"><input type="checkbox" name="extender" class="sorting__checkbox sorting__checkbox--checked" checked>сахарные присыпки</label>
-              <label class="sorting__label"><input type="checkbox" name="extender" class="sorting__checkbox">фрукты</label>
-              <label class="sorting__label"><input type="checkbox" name="extender" class="sorting__checkbox">сиропы</label>
-              <label class="sorting__label"><input type="checkbox" name="extender" class="sorting__checkbox">джемы</label>
+              <label class="sorting__label-checkbox">
+                <input type="checkbox" name="extender" class="sorting__checkbox visually-hidden" checked>
+                <span class="sorting__checkbox-button"></span>
+                шоколадные
+              </label>
+              <label class="sorting__label-checkbox">
+                <input type="checkbox" name="extender" class="sorting__checkbox visually-hidden" checked>
+                <span class="sorting__checkbox-button"></span>
+                сахарные присыпки
+              </label>
+              <label class="sorting__label-checkbox">
+                <input type="checkbox" name="extender" class="sorting__checkbox visually-hidden">
+                <span class="sorting__checkbox-button"></span>
+                фрукты
+              </label>
+              <label class="sorting__label-checkbox">
+                <input type="checkbox" name="extender" class="sorting__checkbox visually-hidden">
+                <span class="sorting__checkbox-button"></span>
+                сиропы
+              </label>
+              <label class="sorting__label-checkbox">
+                <input type="checkbox" name="extender" class="sorting__checkbox visually-hidden">
+                <span class="sorting__checkbox-button"></span>
+                джемы
+              </label>
             </fieldset>
             <button type="submit" class="sorting__button">Применить</button>
           </form>
