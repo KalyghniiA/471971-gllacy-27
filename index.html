@@ -174,6 +174,7 @@
           </section>
         </div>
         <section class="main__map map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582987421309!5m2!1sru!2sru" width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <section class="map__adress">
             <p class="map__description  map__description--address">Адрес главного офиса и офлайн-магазина:</p>
             <p class="map__info  map__info--address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -228,19 +229,21 @@
           </div>
         </footer>
       </div>
-      <div class="popap visually-hidden">
+      <div class="popap">
         <p class="popap__title">Мы обязательно вам ответим!</p>
         <button class="popap__button-close" type="button"><img src="img/cross-big.svg" alt="Кнопка закрыть"></button>
         <form method="POST" action="https://echo.htmlacademy.ru" class="popap__form">
-          <label class="popap__label" for="user-name" class="popap__label">Ваше имя и фамилия</label>
+          <label class="popap__label visually-hidden" for="user-name" class="popap__label">Ваше имя и фамилия</label>
           <input class="popap__input" type="text" name="user-name" placeholder="Имя Фамилия" id="user-name" required>
-          <label class="popap__label" for="user-email">Ваша почта</label>
+          <label class="popap__label visually-hidden" for="user-email">Ваша почта</label>
           <input class="popap__input" type="email" name="user-email" placeholder="email@example.com" id="user-email" required>
-          <label class="popap__label" for="user-text">Ваше сообщение</label>
-          <textarea class="popap__input popap__input--textarea" name="text" cols="30" rows="10" placeholder="В свободной форме" id="user-text"></textarea>
-          <button class="popap__button button" type="submit">Отправить</button class="popap__button button">
+          <label class="popap__label visually-hidden" for="user-text">Ваше сообщение</label>
+          <textarea class="popap__input popap__input--textarea" name="user-text" cols="30" rows="7" placeholder="В свободной форме" id="user-text"></textarea>
+          <button class="popap__button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8fKeZhp80nQyK8Up07yVDHxSepD9ZFNI"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
