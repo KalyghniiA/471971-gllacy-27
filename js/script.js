@@ -29,9 +29,9 @@ window.addEventListener("keydown", function(evt) {
   }
 });
 
-/* modalForm.addEventListener ("submit", function (evt) {
+modalForm.addEventListener ("submit", function (evt) {
   if (!modalLogin.value && !modalEmail.value) {
     evt.preventDefault();
     popap.classList.add("popap__error");
   }
-}); */
+});

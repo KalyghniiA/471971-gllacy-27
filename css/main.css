@@ -1381,13 +1381,15 @@ input[type="radio"].visually-hidden {
   display: none;
   flex-direction: column;
   position: fixed;
-  top: 337px;
+  top: 50%;
   left: 50%;
+  margin-top: -220px;
   margin-left: -239px;
   width: 478px;
   background-color: #f8f7f4;
   color: #323232;
   border-radius: 10px;
+  z-index: 4;
 }
 
 .popap__open {
