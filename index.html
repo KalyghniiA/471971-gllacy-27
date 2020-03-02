@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-min.css">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -16,7 +16,7 @@
         <header class="header">
           <div class="header__container">
             <nav class="navigation">
-              <a class="navigation__logo"><img src="img/logo.svg" alt="logo" class="navigation__image-logo"></a>
+              <a class="navigation__logo"><img src="img/logo.svg" alt="logo" class="navigation__image-logo" width="154" height="64"></a>
               <ul class="navigation__list">
                 <li class="navigation__item">
                   <a href="#" class="navigation__link"><span class="navigation__span">Каталог</span></a>
@@ -71,7 +71,7 @@
           </div>
           <div class="contacts">
             <p class="contacts__time">С 10 до 20, ежедневно</p>
-            <p class="contacts__phone">8 812 450-25-25</p>
+            <a href="tel:88124502525" class="contacts__phone">8 812 450-25-25</a>
           </div>
         </header>
       </div>
@@ -190,22 +190,22 @@
           <ul class="footer___social-list social-list">
             <li class="social-list__button">
               <a class="social-list__link" href="#" aria-label="twitter">
-                <img class="social-list__image" src="img/twitter.svg" alt="twitter">
+                <img class="social-list__image" src="img/twitter.svg" alt="twitter" width="38" height="38">
               </a>
             </li>
             <li class="social-list__button">
               <a class="social-list__link" href="#" aria-label="instagram">
-                <img class="social-list__image" src="img/instagram.svg" alt="instagram">
+                <img class="social-list__image" src="img/instagram.svg" alt="instagram" width="38" height="38">
               </a>
             </li>
             <li class="social-list__button">
               <a class="social-list__link" href="#" aria-label="facebook">
-                <img class="social-list__image" src="img/fb.svg" alt="facebook">
+                <img class="social-list__image" src="img/fb.svg" alt="facebook" width="38" height="38">
               </a>
             </li>
             <li class="social-list__button">
               <a class="social-list__link" href="#" aria-label="ВКонтакте">
-                <img class="social-list__image" src="img/vk.svg" alt="Vk">
+                <img class="social-list__image" src="img/vk.svg" alt="Vk" width="38" height="38">
               </a>
             </li>
           </ul>
@@ -231,7 +231,7 @@
       </div>
       <div class="popap">
         <p class="popap__title">Мы обязательно вам ответим!</p>
-        <button class="popap__button-close" type="button"><img src="img/cross-big.svg" alt="Кнопка закрыть"></button>
+        <button class="popap__button-close" type="button"><img src="img/cross-big.svg" alt="Кнопка закрыть" width="18" height="18"></button>
         <form method="POST" action="https://echo.htmlacademy.ru" class="popap__form">
           <label class="popap__label visually-hidden" for="user-name">Ваше имя и фамилия</label>
           <input class="popap__input" type="text" name="user-name" placeholder="Имя Фамилия" id="user-name">
@@ -244,6 +244,6 @@
       </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8fKeZhp80nQyK8Up07yVDHxSepD9ZFNI"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

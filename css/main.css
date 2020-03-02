@@ -44,6 +44,7 @@ body {
   line-height: 22px;
   color: #ffffff;
   background-color: #849d8f;
+  min-width: 1200px;
 }
 
 .catalog-light {
@@ -519,6 +520,11 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.personal-area__link:hover,
+.personal-area__link:focus {
+  color: #ffbc9e;
+}
+
 .basket {
   border-radius: 20px;
   position: relative;
@@ -663,6 +669,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__phone {
+  display: block;
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
@@ -687,12 +694,14 @@ input[type="radio"].visually-hidden {
 }
 
 .action__block--raspberries {
+  background-color: #bb052a;
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
 }
 
 .action__block--chocolate {
+  background-color: #684333;
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -1156,6 +1165,15 @@ input[type="radio"].visually-hidden {
   border-bottom-color: rgba(225, 225, 225, .2);
 }
 
+.info__link:hover,
+.info__link:focus {
+  color: #ffbc9e;
+}
+
+.info__link:active {
+  color: #ffbc9e;
+}
+
 .info__link--main {
   font-weight: bold;
   position: relative;
@@ -1187,6 +1205,11 @@ input[type="radio"].visually-hidden {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(225, 225, 225, .2);
+}
+
+.developers__link:hover,
+.developers__link:focus {
+  color: #ffbc9e;
 }
 
 .main__contacts-and-breaks {
@@ -1389,6 +1412,10 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.sorting__radio:disabled + .sorting__radio-button {
+  opacity: .4;
+}
+
 .sorting__radio:focus + .sorting__radio-button {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -1425,6 +1452,10 @@ input[type="radio"].visually-hidden {
 .sorting__checkbox:hover + .sorting__checkbox-button,
 .sorting__checkbox:focus + .sorting__checkbox-button {
   opacity: 1;
+}
+
+.sorting__checkbox:disabled + .sorting__checkbox-button {
+  opacity: .4;
 }
 
 .sorting__checkbox:focus + .sorting__checkbox-button {
