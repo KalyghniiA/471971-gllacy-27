@@ -1080,6 +1080,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 18px;
 }
 
+.map__info--phone {
+  display: block;
+  color: #323232;
+}
+
 .map__button {
   display: block;
   margin-top: 25px;
